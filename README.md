@@ -16,25 +16,25 @@ Proyecto para probar las capacidades de github-actions
 | ==        | Igual               |
 | !=        | No igual a          |
 | &&        | Y                   |
-| ||        | Or                  |
+| \|\|       | Or                 |
 
 ## Funciones
 
-###if
+### if
 ```
 if:${{<expresión>}}
 ```
-###contains
+### contains
 ```
 contains(github.event.issue.labels.*.name, 'bug')
 ```
 
-###toJson
+### toJson
 ```
 toJSON(value)
 ```
 
-###fromJson
+### fromJson
 ```
 fromJSON(value)
 ```
