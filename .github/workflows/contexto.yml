@@ -1,0 +1,24 @@
+name: workflow context
+run-name: Validando información sobre el contexto
+
+on:
+    pull_request:
+        branches: [ "main" ]
+
+jobs:
+    build:
+        name: Generate output
+        runs-on: ubuntu-latest
+        outputs:
+            output1: ${{ steps.actor.outputs.firstword }}
+        steps:
+            - uses: actions/checkout@v4
+            
+            - name: job status
+              run: echo "el estado del job es ${{job.status}}"
+
+            - id: actor
+              run: echo "firstword=${{github.actor}}" >> $GITHUB_OUTPUT  
+
+            - id: github_event_prueba
+              run: echo "accion = ${{github.event.action}}"
