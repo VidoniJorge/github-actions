@@ -1,4 +1,5 @@
 # github-actions
+
 Proyecto para probar las capacidades de github-actions
 
 ## Operadores
@@ -55,8 +56,4 @@ Es una manara de acceder a información acerca de las ejecuciones de workflows, 
 | runner | Información sobre el runner ejecutando el actual jobs |
 | secrets | Contiene nombres y valores de secretos disponibles en la ejecución del workflow |
 | inputs | Contiene las entradas con información reutilizable de un workflow lanzado manualmente |
-
-
-
-
 
