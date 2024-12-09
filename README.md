@@ -1,6 +1,44 @@
 # github-actions
 Proyecto para probar las capacidades de github-actions
 
+## trigger
+
+[Doc trigger](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#about-events-that-trigger-workflows)
+
+listado de triggers:
+* branch_protection_rule
+* check_run
+* check_suite
+* create
+* delete
+* deployment
+* deployment_status
+* discussion
+* discussion_comment
+* fork
+* gollum
+* issue_comment
+* issues
+* label
+* merge_group
+* milestone
+* public
+* pull_request
+* pull_request_comment
+* pull_request_review
+* pull_request_review_comment
+* pull_request_target
+* push
+* registry_package
+* release
+* repository_dispatch
+* schedule
+* status
+* watch
+* workflow_call
+* workflow_dispatch
+* workflow_run
+
 ## Operadores
 
 | Operador  | Descripción         |
@@ -59,7 +97,13 @@ Es una manara de acceder a información acerca de las ejecuciones de workflows, 
 
 ### variables
 Son una manera de almacenar y reutilizar información no confidencial.
-https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
+
+[Doc variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables)
+
+Niveles en los que se pueden definir las variables:
+* repositorio
+* entorno
+* organización
 
 **Uso de variable**
 * Se pueden configurar para un workflow con la palabra reservada ENV.
